@@ -20,7 +20,7 @@ function EditStudent() {
     }
     const handleClick = () => {
         ContextData.stuName[IndexValue] = updateObj;
-        Navi('/student')
+        Navi('/cruddata')
         // Navi('/student')
     }
   return (
@@ -40,7 +40,7 @@ function EditStudent() {
           <input type='text' id='batch' placeholder={ContextData.stuName[IndexValue].Batch} name='Batch' onChange={handleChange} />
         </div>
         <button className='btn' type='button' onClick={handleClick} >Update Student</button>
-        <button className='btn' type='button' onClick={() => Navi('/student')} >Cancel</button>
+        <button className='btn' type='button' onClick={() => Navi('/cruddata')} >Cancel</button>
       </form>
     </>
   )

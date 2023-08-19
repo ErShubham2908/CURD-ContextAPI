@@ -17,12 +17,12 @@ function Student() {
 
   return (
     <div>
-      <h1>Student Data</h1>
-      <button className='btn' onClick={() => Navi('/addnewstudent')} >Add New Student</button>
+      <h1>Display Data</h1>
+      <button className='btn' onClick={() => Navi('/addnewdata')} >Add New Student</button>
       <table>
         <thead>
           <tr>
-            <th>S No</th>
+            {/* <th>S No</th> */}
             <th>Name</th>
             <th>Age</th>
             <th>Course</th>
@@ -35,12 +35,12 @@ function Student() {
           {ContextData.stuName.map((item, index) => {
             return(
               <tr key={index}>
-                <td id='sno'>{index+1}</td>
+                {/* <td id='sno'>{index+1}</td> */}
                 <td>{item.Name}</td>
                 <td>{item.Age}</td>
                 <td>{item.Course}</td>
-                <td>{item.Batch}</td>
-                <td ><Link className='link' state={{data : index}} to='/editstudent'>Edit</Link> </td>
+                <td style={{width : '10%'}}>{item.Batch}</td>
+                <td ><Link className='link' state={{data : index}} to='/editdata'>Edit</Link> </td>
                 <td > <FontAwesomeIcon onClick={() => handleDelete(item)} style={{color: "black"}} icon={faTrash} /></td>
               </tr>
             )

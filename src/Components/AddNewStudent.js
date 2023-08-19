@@ -20,7 +20,7 @@ function AddNewStudent() {
 
     const handleClick = () => {
         ContextData.stuName.push(newStu);
-        Navi('/student')
+        Navi('/cruddata')
     }
   return (
     <div className='pDiv'>
@@ -39,7 +39,7 @@ function AddNewStudent() {
           <input type='text' id='batch' placeholder='Enter Your Batch' name='Batch' onChange={handleChange} />
         </div>
         <button className='btn' type='button' onClick={handleClick} >Add New Student</button>
-        <button className='btn' type='button' onClick={() => Navi('/student')} >Cancel</button>
+        <button className='btn' type='button' onClick={() => Navi('/cruddata')} >Cancel</button>
       </form>
     </div>
   )
