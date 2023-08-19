@@ -151,11 +151,10 @@ td:nth-child(6) {
 }
 
 .lForm label:hover{
-    box-shadow: -5px 5px 5px gray;
+    box-shadow: -2px 2px 5px gray;
     border-radius: .2em;
-    border: none;
-    border-top: 1px solid black;
-    border-right: 1px dotted black;
+    border-top: 1px solid rgba(22, 22, 87, 0.757);
+    border-right: 2px solid rgba(22, 22, 87, 0.757);
 }
 
 .lForm input {
