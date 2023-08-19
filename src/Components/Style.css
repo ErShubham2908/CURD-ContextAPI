@@ -23,7 +23,6 @@ h1 {
     box-shadow: 5px 5px 10px gray;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #9f430acf ; */
     background-color: #085573cf;
     font-size: 1.6em;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -44,12 +43,9 @@ table {
 }
 
 th {
-    /* width: 10%; */
-    /* text-align: left; */
     font-size: 1.5rem;
     border-bottom: 2px solid rgb(26, 41, 118);
     border-top: 2px solid rgb(26, 41, 118);
-    /* border-radius: 5px; */
     text-shadow: 5px -5px 5px gray;
 }
 
@@ -117,7 +113,6 @@ td:nth-child(6) {
     transition: 0.7s ease all;
 }
 
-.link,
 .pNavLink {
     text-decoration: none;
 }
@@ -126,7 +121,6 @@ td:nth-child(6) {
     width: 95%;
     height: 70vh;
     margin: auto;
-    /* border: 1px solid green; */
 }
 
 #sno {
@@ -143,17 +137,29 @@ td:nth-child(6) {
 }
 
 .lForm {
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
-    padding: 3em 0;
+    padding: 1em 0;
+    margin: auto;
 }
 
 .lForm label {
+    width: 18%;
     font-size: 2.4em;
+    transition: 0.7s ease all;
+}
+
+.lForm label:hover{
+    box-shadow: -5px 5px 5px gray;
+    border-radius: .2em;
+    border: none;
+    border-top: 1px solid black;
+    border-right: 1px dotted black;
 }
 
 .lForm input {
-    width: 35%;
+    width: 45%;
     height: 3.5em;
     padding: 1em;
     font-size: 1em;
@@ -161,7 +167,9 @@ td:nth-child(6) {
     color: blue;
     font-weight: 700;
     border: none;
+    font-style: italic;
 }
+
 .lForm input:hover {
     border-bottom: 2px solid black;
     border-right: 2px solid black;

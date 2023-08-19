@@ -12,19 +12,24 @@ function Contact() {
             email: email.value, phone: phone.value,
         };
         console.log(conFom);
+        
     };
     return (
         <div className="form">
             <form onSubmit={onSubmit}>
                 <div className="lForm">
-                    <label htmlFor="fname">F Name</label>
+                    <label htmlFor="fname">First Name</label>
                     <input type="text" id="fname" required placeholder="Enter First Name" />
-                    <label htmlFor="lname">L Name</label>
+                  </div>
+                  <div className="lForm">
+                    <label htmlFor="lname">Last Name</label>
                     <input type="text" id="lname" required placeholder="Enter Last Name" />
                   </div>
-                    <div className="lForm">
+                  <div className="lForm">
                     <label htmlFor="email"> Email </label>
                     <input type="email" id="email" required placeholder="Your Email" />
+                  </div>
+                  <div className="lForm">
                     <label htmlFor="phone"> Phone </label>
                     <input  id="phone" placeholder="+91-9876543210" required />
                 </div>
